@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size:62.5% ;
+
+    --font-primary: 'Poppins', sans-serif;
+    --text-color: #303030;
+    
+    --hue: 194;
+    --primary-color:hsl(var(--hue), 100%, 63%)
+}
+
+body{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: rgb(238, 252, 252);
+}
+body *{
+    font-family: var(--font-primary);
+}
+
+
+.sr-orly{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space:nowrap;
+    border-width: 0;
+}
+
+
+#app{
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin:2.5rem 0 ;
+}
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#search{
+    display: flex;
+    align-items: center;
+}
+#search input{
+    height: 3.2rem;
+    border: solid 1px #ccc;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 0.8rem;
+}
+
+
+#search button{
+    background-color: var(--primary-color);    
+    border-radius: 0 .4rem 0 .4rem 0;
+    height: 3.2rem;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+#search button:hover{
+filter: brightness(1,1);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table *{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+table tr th{
+    background-color: var(--primary-color);   
+    text-align: left;
+    font-weight: normal;
+    padding: 1.8rem;
+}
+
+table th:first-child{
+    border-top-left-radius:.4rem ;
+}
+table th:first-child{
+    border-top-right-radius: .4rem;
+}
+table td{
+    padding: 1.5rem;
+    text-align: left;
+}
+td.user img{
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}

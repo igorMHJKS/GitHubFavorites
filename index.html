@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GitHub Favorites</title>
 
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
-    
+    <div id="app">
+        <header>
+            <h1>GitHub Favorites</h1>
+
+            <div id="search">
+                <label class="sr-orly" for="input-search">Usúario do GitHub</label>
+                <input id="input-search" type="text" placeholder="Usúario do GitHub">
+                <button>&plus;</button>
+            </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>usuarios</td>
+                    <th> Repositórios </th>
+                    <th>Seguidores</th>
+
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://avatars.githubusercontent.com/u/103233352?v=4" alt="Imagem de Igor">
+                        <a href="https://github.com/igorMHJKS"></a>
+                        <p>Igor N</p>
+                        <span>igor</span>
+                    </td>
+                    <td class="repositories">19</td>
+                    <td class="followers">2</td>
+                    <td><button>&times;</button></td>
+                </tr>
+
+            </tbody>
+
+            <thead>
+                <tr>
+                    <td>Usúarios</td>
+                <td>Repositórios</tr>
+                <td>Seguidores</td>
+            </thead>
+            <tbody>
+                <td class="user">
+                    <img src="https://avatars.githubusercontent.com/u/86751788?v=4" alt="Imagem de Igor">
+                    <a href="https://github.com/gustagui" target="_blank"></a>
+                    <p>Gustavo</p>
+                    <span>gustavo</span>
+                </td>
+                <td class="repositories">27</th>
+                <td class="followers">20</td>
+                <td><button>&times;</button></td>
+
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
 </body>
 </html>
