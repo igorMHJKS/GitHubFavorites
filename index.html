@@ -18,60 +18,53 @@
     <div id="app">
         <header>
             <h1>GitHub Favorites</h1>
-
-            <div id="search">
-                <label class="sr-orly" for="input-search">Usúario do GitHub</label>
-                <input id="input-search" type="text" placeholder="Usúario do GitHub">
-                <button>&plus;</button>
+ 
+            <div class="search">
+                <label class="sr-orly" for="inpit-search">Usúario do GitHub</label>
+                <input id="inpit-search" type="text" placeholder="Usúario do GitHub">
+                <button  class="remove">&plus;</button>
             </div>
         </header>
 
-        <table>
+          <table>
             <thead>
                 <tr>
-                    <td>usuarios</td>
-                    <th> Repositórios </th>
+                    <th>Usúario</th>
+                    <th>Repositórios</th>
                     <th>Seguidores</th>
-
+                    <th></th>
                 </tr>
-                
             </thead>
             <tbody>
                 <tr>
                     <td class="user">
                         <img src="https://avatars.githubusercontent.com/u/103233352?v=4" alt="Imagem de Igor">
-                        <a href="https://github.com/igorMHJKS"></a>
-                        <p>Igor N</p>
-                        <span>igor</span>
+                        <a href="https://github.com/igorMHJKS" target="_blank"></a>  
+                        <p>Igor Nunes</p>
+                        <span>igor.xkz</span>
                     </td>
                     <td class="repositories">19</td>
-                    <td class="followers">2</td>
-                    <td><button>&times;</button></td>
+                    <td class="seguidores">2</td>
+                    <td><button class="remove">&times;</button></td>
                 </tr>
 
-            </tbody>
-
-            <thead>
                 <tr>
-                    <td>Usúarios</td>
-                <td>Repositórios</tr>
-                <td>Seguidores</td>
-            </thead>
-            <tbody>
-                <td class="user">
-                    <img src="https://avatars.githubusercontent.com/u/86751788?v=4" alt="Imagem de Igor">
-                    <a href="https://github.com/gustagui" target="_blank"></a>
-                    <p>Gustavo</p>
-                    <span>gustavo</span>
-                </td>
-                <td class="repositories">27</th>
-                <td class="followers">20</td>
-                <td><button>&times;</button></td>
-
+                    <td class="user">
+                        <img src="https://avatars.githubusercontent.com/u/86751788?v=4" alt="Imagem de Igor">
+                        <a href="https://github.com/gustagui" target="_blank"></a>
+                        <p>Gustavo</p>
+                        <span>gustagui</span>
+                    </td>
+                    <td class="repositories">27</td>
+                    <td class="seguidores">20</td>
+                    <td><button class="remove">&times;</button></td>
                 </tr>
             </tbody>
             <tfoot></tfoot>
-        </table>
+          </table>
     </div>
+
+    <script src="/JS/main.js" type="module"></script>
 </body>
 </html>
+
